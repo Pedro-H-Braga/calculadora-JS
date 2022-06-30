@@ -1,2 +1,2 @@
 # calculadora-simples-JS
-Calculadora Simples para colocar em práticas meus aprendizados em JS utilizando JS 
+Calculadora Simples para colocar em práticas meus aprendizados em JS 
