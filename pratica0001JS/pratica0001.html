@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA SIMPLES</title>
+    <style>
+        body {
+            font: normal 20pt arial rgb(0, 0, 0);
+            background-color: rgb(201, 184, 144);             
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual seu nome?') //RECEBE O NOME DO USER        
+        var operacao = Number(window.prompt('Escolha uma operacao: digite (1) para SOMA; digite (2) para SUBTRAÇÃO; digite (3) para MULTIPLICAÇÃO; digite (4) para DIVISÃO; digite (5) para RESTO; digite (6) para POTENCIA')) // escolher a operacao
+        window.alert(`${nome.toUpperCase()} voce escolheu a operacao: ${operacao}`) // exibir a operacao escolhida
+        
+        switch (operacao) {
+            case 1:            
+            var opSoma1 = Number(window.prompt('Digite o operando 1 para a operacao')) //Recebe tipo numerico do window.prompt
+            var opSoma2 = Number(window.prompt('Digite o operando 2 para a operacao')) //Recebe tipo numerico do window.prompt
+            var soma = opSoma1 + opSoma2 //faz a soma 
+            window.alert(`O resultado da sua operação foi: ${soma}`) // printa a soma
+            document.write(`Operacao de ${nome.toUpperCase()}:<br> ${opSoma1} + ${opSoma2} = <strong>${soma}</strong>`) //Exibe a operacao                
+                break;
+
+                case 2:
+                var opSub1 = Number(window.prompt('Digite o operando 1 para a operacao')) //Recebe tipo numerico do window.prompt
+                var opSub2 = Number(window.prompt('Digite o operando 2 para a operacao')) //Recebe tipo numerico do window.prompt
+                var sub = opSub1 - opSub2 //faz a subtração
+                window.alert(`O resultado da sua operação foi: ${sub}`) // printa a subtração
+                document.write(`Operacao de ${nome.toUpperCase()}:<br> ${opSub1} - ${opSub2} = <strong>${sub}</strong>`) //Exibe a operacao                
+                break;
+
+                case 3:
+                var opMult1 = Number(window.prompt('Digite o operando 1 para a operacao')) //Recebe tipo numerico do window.prompt
+                var opMult2 = Number(window.prompt('Digite o operando 2 para a operacao')) //Recebe tipo numerico do window.prompt
+                var mult = opMult1 * opMult2 //faz a subtração
+                window.alert(`O resultado da sua operação foi: ${mult}`) // printa a subtração              
+                document.write(`Operacao de ${nome.toUpperCase()}:<br> ${opMult1} * ${opMult2} = <strong>${mult}</strong>`) //Exibe a operacao                
+                break;
+
+                case 4:
+                var opDiv1 = Number(window.prompt('Digite o operando 1 para a operacao')) //Recebe tipo numerico do window.prompt
+                var opDiv2 = Number(window.prompt('Digite o operando 2 para a operacao')) //Recebe tipo numerico do window.prompt
+                var div = opDiv1 / opDiv2 //faz a subtração
+                window.alert(`O resultado da sua operação foi: ${div}`) // printa a subtração              
+                document.write(`Operacao de ${nome.toUpperCase()}:<br> ${opDiv1} / ${opDiv2} = <strong>${div}</strong>`) //Exibe a operacao                               
+                break;
+
+                case 5:
+                var opResto1 = Number(window.prompt('Digite o operando 1 para a operacao')) //Recebe tipo numerico do window.prompt
+                var opResto2 = Number(window.prompt('Digite o operando 2 para a operacao')) //Recebe tipo numerico do window.prompt
+                var resto = opResto1 % opResto2 //faz a subtração
+                window.alert(`O resultado da sua operação foi: ${resto}`) // printa a subtração              
+                document.write(`Operacao de ${nome.toUpperCase()}:<br> ${opResto1} % ${opResto2} = <strong>${resto}</strong>`) //Exibe a operacao                                
+                break;
+
+                case 6:
+                var opPot1 = Number(window.prompt('Digite o operando 1 para a operacao')) //Recebe tipo numerico do window.prompt
+                var opPot2 = Number(window.prompt('Digite o operando 2 para a operacao')) //Recebe tipo numerico do window.prompt
+                var pot = opPot1 ** opPot2 //faz a subtração
+                window.alert(`O resultado da sua operação foi: ${pot}`) // printa a subtração              
+                document.write(`Operacao de ${nome.toUpperCase()}:<br> ${opPot1} ** ${opPot2} = <strong>${pot}</strong>`) //Exibe a operacao                                
+                break;
+        
+            default:
+                window.alert(`${nome.toUpperCase()}Escreva algo entre as opcoes`)
+                break;
+        }
+                
+    </script>    
+
+                <p>
+                    Esse projeto foi feito por <a href=" https://github.com/Pedro-H-Braga">Pedro-H-Braga</a>
+                </p>
+</body>
+</html>
